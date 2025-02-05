@@ -26,12 +26,12 @@ let highScore = 0;
 let scored = false;
 
 document.body.onkeyup = function (e) {
-    if (e.code == 'Space, touch') {
+    if (e.code == 'Space') {
         birdVelocity = FLAP_SPEED;
     }
 }
 
-document.getElementById('restart-button').addEventListener('click', 'touch', function () {
+document.getElementById('restart-button').addEventListener('click', function () {
     hideEndMenu();
     resetGame();
     loop();
