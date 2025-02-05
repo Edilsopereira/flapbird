@@ -1,11 +1,3 @@
-function detectTouchDevice() {
-    return (('ontouchstart' in window) ||
-        (navigator.maxTouchPoints > 0) ||
-        (navigator.msMaxTouchPoints > 0));
-}
-
-detectTouchDevice()
-
 const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext("2d");
 const gameContainer = document.getElementById('game-container');
@@ -39,7 +31,7 @@ document.body.onkeyup = function (e) {
     }
 }
 
-document.getElementById('restart-button').addEventListener('click', function () {
+document.getElementById('restart-button').addEventListener('click', 'touch', function () {
     hideEndMenu();
     resetGame();
     loop();
