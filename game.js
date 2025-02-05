@@ -1,3 +1,11 @@
+function detectTouchDevice() {
+    return (('ontouchstart' in window) ||
+        (navigator.maxTouchPoints > 0) ||
+        (navigator.msMaxTouchPoints > 0));
+}
+
+detectTouchDevice()
+
 const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext("2d");
 const gameContainer = document.getElementById('game-container');
@@ -26,7 +34,7 @@ let highScore = 0;
 let scored = false;
 
 document.body.onkeyup = function (e) {
-    if (e.code == 'Space') {
+    if (e.code == 'Space, touch') {
         birdVelocity = FLAP_SPEED;
     }
 }
