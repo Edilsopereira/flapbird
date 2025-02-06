@@ -32,7 +32,7 @@ document.body.onkeyup = function (e) {
 }
 
 let lastTap = 0;
-const doubleTapDelay = 800;
+const doubleTapDelay = 2000;
 
 document.addEventListener('touchstart', function (e) {
     birdVelocity = FLAP_SPEED;
