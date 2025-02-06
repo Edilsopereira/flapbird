@@ -30,6 +30,9 @@ document.body.onkeyup = function (e) {
         birdVelocity = FLAP_SPEED;
     }
 }
+document.addEventListener('touchstart', function (e) {
+    birdVelocity = FLAP_SPEED;
+});
 
 document.getElementById('restart-button').addEventListener('click', function () {
     hideEndMenu();

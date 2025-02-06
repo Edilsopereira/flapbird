@@ -9,6 +9,58 @@ body {
     background-color: #73c8a9;
     font-family: 'Press Start 2P', cursive;
     background-image: linear-gradient(to right, #73c8a9, #373b44);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    border: 5px solid #2e2e2e;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 95vw;
+    height: auto;
+    max-height: 70vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/Flappy_Bird_Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.backdrop-blur {
+    filter: blur(5px);
+}
+
+#end-menu {
+    display: none;
+    margin: auto;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+    --cor2: #000;
+    --cor3: #895;
+}
+
+body {
+    background-color: #73c8a9;
+    font-family: 'Press Start 2P', cursive;
+    background-image: linear-gradient(to right, #73c8a9, #373b44);
 }
 
 canvas {
