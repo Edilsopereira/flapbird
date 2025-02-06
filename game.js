@@ -36,6 +36,10 @@ const doubleTapDelay = 300;
 
 document.addEventListener('touchstart', function (e) {
     birdVelocity = FLAP_SPEED;
+    if (timeSinceLastTap < doubleTapDelay) {
+        e.preventDefault();
+        return;
+    }
 });
 
 document.getElementById('restart-button').addEventListener('click', function () {
