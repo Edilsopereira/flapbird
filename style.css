@@ -95,12 +95,14 @@ button:hover {
 
 @media (max-width: 767px) {
     canvas {
+        font-family: 'Courier New', Courier, monospace;
         width: 95vw;
         height: auto;
         max-height: 50vh;
     }
 
     #end-menu {
+        font-family: 'Courier New', Courier, monospace;
         width: 90vw;
         margin: 20px auto;
         position: relative;
@@ -152,6 +154,7 @@ button:hover {
 }
 
 .rodape h3 {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     margin-top: 1%;
 }
