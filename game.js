@@ -30,6 +30,10 @@ document.body.onkeyup = function (e) {
         birdVelocity = FLAP_SPEED;
     }
 }
+
+let lastTap = 0;
+const doubleTapDelay = 300;
+
 document.addEventListener('touchstart', function (e) {
     birdVelocity = FLAP_SPEED;
 });
@@ -39,7 +43,6 @@ document.getElementById('restart-button').addEventListener('click', function () 
     resetGame();
     loop();
 })
-
 
 
 function increaseScore() {
